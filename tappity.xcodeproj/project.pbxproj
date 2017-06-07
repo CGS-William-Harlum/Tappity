@@ -7,14 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1006C451EE4CA4B0088BC24 /* HighscoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1006C441EE4CA4B0088BC24 /* HighscoreViewController.swift */; };
 		C1799CB71EDBD230002ACFA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1799CB61EDBD230002ACFA2 /* AppDelegate.swift */; };
 		C1799CB91EDBD230002ACFA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1799CB81EDBD230002ACFA2 /* ViewController.swift */; };
 		C1799CBC1EDBD230002ACFA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1799CBA1EDBD230002ACFA2 /* Main.storyboard */; };
 		C1799CBE1EDBD230002ACFA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1799CBD1EDBD230002ACFA2 /* Assets.xcassets */; };
 		C1799CC11EDBD230002ACFA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1799CBF1EDBD230002ACFA2 /* LaunchScreen.storyboard */; };
+		C1DA13C51EDF7C62006F24EA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DA13C31EDF7C62006F24EA /* Interface.storyboard */; };
+		C1DA13C71EDF7C62006F24EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1DA13C61EDF7C62006F24EA /* Assets.xcassets */; };
+		C1DA13CE1EDF7C62006F24EA /* TappityWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C1DA13CD1EDF7C62006F24EA /* TappityWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C1DA13D51EDF7C62006F24EA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DA13D41EDF7C62006F24EA /* InterfaceController.swift */; };
+		C1DA13D71EDF7C62006F24EA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DA13D61EDF7C62006F24EA /* ExtensionDelegate.swift */; };
+		C1DA13D91EDF7C62006F24EA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DA13D81EDF7C62006F24EA /* NotificationController.swift */; };
+		C1DA13DB1EDF7C62006F24EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1DA13DA1EDF7C62006F24EA /* Assets.xcassets */; };
+		C1DA13DF1EDF7C62006F24EA /* TappityWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C1DA13C11EDF7C62006F24EA /* TappityWatch.app */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C1DA13CF1EDF7C62006F24EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1799CAB1EDBD230002ACFA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1DA13CC1EDF7C62006F24EA;
+			remoteInfo = "TappityWatch Extension";
+		};
+		C1DA13DD1EDF7C62006F24EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1799CAB1EDBD230002ACFA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1DA13C01EDF7C62006F24EA;
+			remoteInfo = TappityWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C1DA13E51EDF7C62006F24EA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C1DA13CE1EDF7C62006F24EA /* TappityWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1DA13E71EDF7C62006F24EA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C1DA13DF1EDF7C62006F24EA /* TappityWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C1006C441EE4CA4B0088BC24 /* HighscoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighscoreViewController.swift; sourceTree = "<group>"; };
 		C1799CB31EDBD230002ACFA2 /* tappity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tappity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1799CB61EDBD230002ACFA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1799CB81EDBD230002ACFA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,10 +74,28 @@
 		C1799CBD1EDBD230002ACFA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1799CC01EDBD230002ACFA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1799CC21EDBD230002ACFA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1DA13C11EDF7C62006F24EA /* TappityWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TappityWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1DA13C41EDF7C62006F24EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C1DA13C61EDF7C62006F24EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1DA13C81EDF7C62006F24EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1DA13CD1EDF7C62006F24EA /* TappityWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TappityWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1DA13D31EDF7C62006F24EA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C1DA13D41EDF7C62006F24EA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C1DA13D61EDF7C62006F24EA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C1DA13D81EDF7C62006F24EA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C1DA13DA1EDF7C62006F24EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1DA13DC1EDF7C62006F24EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C1799CB01EDBD230002ACFA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1DA13CA1EDF7C62006F24EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				C1799CB51EDBD230002ACFA2 /* tappity */,
+				C1DA13C21EDF7C62006F24EA /* TappityWatch */,
+				C1DA13D11EDF7C62006F24EA /* TappityWatch Extension */,
 				C1799CB41EDBD230002ACFA2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				C1799CB31EDBD230002ACFA2 /* tappity.app */,
+				C1DA13C11EDF7C62006F24EA /* TappityWatch.app */,
+				C1DA13CD1EDF7C62006F24EA /* TappityWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +128,7 @@
 		C1799CB51EDBD230002ACFA2 /* tappity */ = {
 			isa = PBXGroup;
 			children = (
+				C1006C441EE4CA4B0088BC24 /* HighscoreViewController.swift */,
 				C1799CB61EDBD230002ACFA2 /* AppDelegate.swift */,
 				C1799CB81EDBD230002ACFA2 /* ViewController.swift */,
 				C1799CBA1EDBD230002ACFA2 /* Main.storyboard */,
@@ -62,6 +137,37 @@
 				C1799CC21EDBD230002ACFA2 /* Info.plist */,
 			);
 			path = tappity;
+			sourceTree = "<group>";
+		};
+		C1DA13C21EDF7C62006F24EA /* TappityWatch */ = {
+			isa = PBXGroup;
+			children = (
+				C1DA13C31EDF7C62006F24EA /* Interface.storyboard */,
+				C1DA13C61EDF7C62006F24EA /* Assets.xcassets */,
+				C1DA13C81EDF7C62006F24EA /* Info.plist */,
+			);
+			path = TappityWatch;
+			sourceTree = "<group>";
+		};
+		C1DA13D11EDF7C62006F24EA /* TappityWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C1DA13D41EDF7C62006F24EA /* InterfaceController.swift */,
+				C1DA13D61EDF7C62006F24EA /* ExtensionDelegate.swift */,
+				C1DA13D81EDF7C62006F24EA /* NotificationController.swift */,
+				C1DA13DA1EDF7C62006F24EA /* Assets.xcassets */,
+				C1DA13DC1EDF7C62006F24EA /* Info.plist */,
+				C1DA13D21EDF7C62006F24EA /* Supporting Files */,
+			);
+			path = "TappityWatch Extension";
+			sourceTree = "<group>";
+		};
+		C1DA13D21EDF7C62006F24EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1DA13D31EDF7C62006F24EA /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +180,51 @@
 				C1799CAF1EDBD230002ACFA2 /* Sources */,
 				C1799CB01EDBD230002ACFA2 /* Frameworks */,
 				C1799CB11EDBD230002ACFA2 /* Resources */,
+				C1DA13E71EDF7C62006F24EA /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C1DA13DE1EDF7C62006F24EA /* PBXTargetDependency */,
 			);
 			name = tappity;
 			productName = tappity;
 			productReference = C1799CB31EDBD230002ACFA2 /* tappity.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C1DA13C01EDF7C62006F24EA /* TappityWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1DA13E61EDF7C62006F24EA /* Build configuration list for PBXNativeTarget "TappityWatch" */;
+			buildPhases = (
+				C1DA13BF1EDF7C62006F24EA /* Resources */,
+				C1DA13E51EDF7C62006F24EA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1DA13D01EDF7C62006F24EA /* PBXTargetDependency */,
+			);
+			name = TappityWatch;
+			productName = TappityWatch;
+			productReference = C1DA13C11EDF7C62006F24EA /* TappityWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C1DA13CC1EDF7C62006F24EA /* TappityWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1DA13E41EDF7C62006F24EA /* Build configuration list for PBXNativeTarget "TappityWatch Extension" */;
+			buildPhases = (
+				C1DA13C91EDF7C62006F24EA /* Sources */,
+				C1DA13CA1EDF7C62006F24EA /* Frameworks */,
+				C1DA13CB1EDF7C62006F24EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TappityWatch Extension";
+			productName = "TappityWatch Extension";
+			productReference = C1DA13CD1EDF7C62006F24EA /* TappityWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +237,16 @@
 				ORGANIZATIONNAME = william.harlum;
 				TargetAttributes = {
 					C1799CB21EDBD230002ACFA2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 494BFW4HLD;
+						ProvisioningStyle = Automatic;
+					};
+					C1DA13C01EDF7C62006F24EA = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 494BFW4HLD;
+						ProvisioningStyle = Automatic;
+					};
+					C1DA13CC1EDF7C62006F24EA = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 494BFW4HLD;
 						ProvisioningStyle = Automatic;
@@ -115,6 +267,8 @@
 			projectRoot = "";
 			targets = (
 				C1799CB21EDBD230002ACFA2 /* tappity */,
+				C1DA13C01EDF7C62006F24EA /* TappityWatch */,
+				C1DA13CC1EDF7C62006F24EA /* TappityWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +284,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C1DA13BF1EDF7C62006F24EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DA13C71EDF7C62006F24EA /* Assets.xcassets in Resources */,
+				C1DA13C51EDF7C62006F24EA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1DA13CB1EDF7C62006F24EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DA13DB1EDF7C62006F24EA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +308,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1006C451EE4CA4B0088BC24 /* HighscoreViewController.swift in Sources */,
 				C1799CB91EDBD230002ACFA2 /* ViewController.swift in Sources */,
 				C1799CB71EDBD230002ACFA2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C1DA13C91EDF7C62006F24EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DA13D91EDF7C62006F24EA /* NotificationController.swift in Sources */,
+				C1DA13D71EDF7C62006F24EA /* ExtensionDelegate.swift in Sources */,
+				C1DA13D51EDF7C62006F24EA /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1DA13D01EDF7C62006F24EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1DA13CC1EDF7C62006F24EA /* TappityWatch Extension */;
+			targetProxy = C1DA13CF1EDF7C62006F24EA /* PBXContainerItemProxy */;
+		};
+		C1DA13DE1EDF7C62006F24EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1DA13C01EDF7C62006F24EA /* TappityWatch */;
+			targetProxy = C1DA13DD1EDF7C62006F24EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C1799CBA1EDBD230002ACFA2 /* Main.storyboard */ = {
@@ -159,6 +354,14 @@
 				C1799CC01EDBD230002ACFA2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C1DA13C31EDF7C62006F24EA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1DA13C41EDF7C62006F24EA /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -285,6 +488,76 @@
 			};
 			name = Release;
 		};
+		C1DA13E01EDF7C62006F24EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 494BFW4HLD;
+				IBSC_MODULE = TappityWatch_Extension;
+				INFOPLIST_FILE = TappityWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = williamharlum.tappity.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		C1DA13E11EDF7C62006F24EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 494BFW4HLD;
+				IBSC_MODULE = TappityWatch_Extension;
+				INFOPLIST_FILE = TappityWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = williamharlum.tappity.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		C1DA13E21EDF7C62006F24EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 494BFW4HLD;
+				INFOPLIST_FILE = "TappityWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = williamharlum.tappity.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		C1DA13E31EDF7C62006F24EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 494BFW4HLD;
+				INFOPLIST_FILE = "TappityWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = williamharlum.tappity.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -304,6 +577,25 @@
 				C1799CC71EDBD230002ACFA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1DA13E41EDF7C62006F24EA /* Build configuration list for PBXNativeTarget "TappityWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1DA13E21EDF7C62006F24EA /* Debug */,
+				C1DA13E31EDF7C62006F24EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1DA13E61EDF7C62006F24EA /* Build configuration list for PBXNativeTarget "TappityWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1DA13E01EDF7C62006F24EA /* Debug */,
+				C1DA13E11EDF7C62006F24EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

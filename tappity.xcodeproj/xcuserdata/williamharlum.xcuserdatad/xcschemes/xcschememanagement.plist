@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>TappityWatch (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>TappityWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>tappity.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +23,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>C1799CB21EDBD230002ACFA2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C1DA13C01EDF7C62006F24EA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
