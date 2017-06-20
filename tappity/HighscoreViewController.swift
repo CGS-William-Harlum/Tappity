@@ -20,33 +20,14 @@ class HighscoreViewController: UIViewController {
     @IBOutlet weak var button8: UILabel!
     @IBOutlet weak var button9: UILabel!
     @IBOutlet weak var button10: UILabel!
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     func kek(score: Int, number: Int, Name: String) {
         let buttonarray = [button1, button2, button3, button4, button5, button6, button7, button8, button9, button10]
-        buttonarray[number]?.text = ("\(score) \(Name)")
+        buttonarray[number]?.text = ("\(Name) \(score)")
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
